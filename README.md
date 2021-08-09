@@ -1,4 +1,4 @@
-selenium-testng-framework test1
+selenium-testng-framework test2
 ---
 
 ---
