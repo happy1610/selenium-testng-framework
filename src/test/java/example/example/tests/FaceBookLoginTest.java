@@ -18,7 +18,7 @@ public class FaceBookLoginTest extends BaseTest {
 	public void facebookLoginTest() {
 		driver.get("https://www.facebook.com/");
 		FacebookLoginPage facebookLoginPage = PageinstancesFactory.getInstance(FacebookLoginPage.class);
-		facebookLoginPage.enterEmail("abc").enterPassword("abc").clickSignIn();
-		Assert.assertTrue(false, "Login failed : Test failed");
+		facebookLoginPage.enterEmail("test").enterPassword("test").clickSignIn();
+		Assert.assertTrue(driver.getTitle().contains("Email hoặc số di động bạn nhập không kết nối với tài khoản nào. Hãy tìm tài khoản của bạn và đăng nhập."), "Title doesn't contain abc : Test Failed");
 	}
 }
