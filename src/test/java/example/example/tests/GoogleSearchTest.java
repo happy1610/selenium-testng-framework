@@ -17,11 +17,19 @@ public class GoogleSearchTest extends BaseTest {
 	/**
 	 * Google search test.
 	 */
+//	@Test
+//	public void googleSearchTest() {
+//		driver.get("https://www.google.co.in/");
+//		GooglePage googlePage = PageinstancesFactory.getInstance(GooglePage.class);
+//		googlePage.searchText("automation test");
+//		Assert.assertTrue(driver.getTitle().contains("automation test"), "Title doesn't contain abc : Test Failed");
+//	}
+
 	@Test
 	public void googleSearchTest() {
-		driver.get("https://www.google.co.in/");
-		GooglePage googlePage = PageinstancesFactory.getInstance(GooglePage.class);
-		googlePage.searchText("automation test");
-		Assert.assertTrue(driver.getTitle().contains("automation test"), "Title doesn't contain abc : Test Failed");
+		driver.get("http://localhost:8000/");
+//		GooglePage googlePage = PageinstancesFactory.getInstance(GooglePage.class);
+//		googlePage.searchText("automation test");
+		Assert.assertTrue(driver.getPageSource().contains("Static Website Hosting1"), "Test Failed");
 	}
 }
