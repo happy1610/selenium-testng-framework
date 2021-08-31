@@ -5,7 +5,7 @@
 	<test thread-count="5" name="Test" parallel="classes">
 		<classes>
 			<class name="example.example.tests.GoogleSearchTest" />
-			<class name="example.example.tests.FaceBookLoginTest"></class>
+<!-- 			<class name="example.example.tests.FaceBookLoginTest"></class> -->
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
